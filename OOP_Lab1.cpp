@@ -1,59 +1,43 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-void arrayA(int a[], int n) {
-    for (int i = 0; i < n * 2; i++)
-    {
-        a[i] = rand() % (30) - 15;
-        cout << a[i] << " ";
-    }
-    cout << endl;
+void add_elements_random (vector<int> &array, int n) {
+	for (int i = 0; i < n; i++) {
+		array.push_back(rand() % (30) - 15);
+	}
 }
 
-void arrayB(int b[], int n) {
-    for (int i = 0; i < n * 2; i++)
-    {
-        b[i] = rand() % (30) - 15;
-        cout << b[i] << " ";
-    }
-    cout << endl;
+void add_elements (vector<int> &array, int n) {
+	for (int i = 0; i < n; i++) {
+		int x;
+		cout << "Enter element: ";
+		cin >> x;
+		array.push_back(x);
+	}
 }
 
-void arrayC(int c[], int a[], int b[], int n) {
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = n; j < n * 2; j++)
-        {
-            c[i] = a[i] + b[i];
-            c[j] = a[j] - b[j];
-        }
-    }
-
-    for (int i = 0; i < n * 2; i++)
-    {
-        cout << c[i] << " ";
-    }
+void print_array(vector<int> array) {
+	for (int i = 0; i < array.size(); i++) {
+		cout << array[i] << " ";
+	}
+	cout << endl;
 }
 
-void maxArray(int a[], int n, int t, int max) {
-    cout << "Enter array elements ( > -100): " << endl;
-    for (int i = 0; i < n; i++)
-        cin >> a[i];
+void task_1(vector<int>& array_a, vector<int>& array_b, vector<int>& array_c) {
 
-    for (int i = 0; i < n; i++)
-    {
-        if (a[i] != t)
-        {
-            if (a[i] < 0 && a[i] > max)
-                max = a[i];
-        }
-        else break;
-    }
 }
 
 int main() {
+    int n;
+    vector<int> array_a;
+    vector<int> array_b;
+    vector<int> array_c;
+    int t;
     srand(time(nullptr));
+
+    saldfkjsal;dkf
 
     int choice;
     do {
