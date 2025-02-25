@@ -37,7 +37,7 @@ int main() {
     int t;
     srand(time(nullptr));
 
-    saldfkjsal;dkf
+    saldfkjsal
 
     int choice;
     do {
